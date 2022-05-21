@@ -9,8 +9,7 @@ class Pracownik:
 il_pracownikow=int(input())
 pracownicy = []
 for linia in range(il_pracownikow):
-  imie = input()
-  brutto = input()
+  imie, brutto = input().split()
   pracownik = Pracownik(imie, float(brutto))
   pracownicy.append(pracownik)
 
